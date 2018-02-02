@@ -1,0 +1,18 @@
+/* Charles Goodwin || PennCodingBootCampJan18 */
+
+
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("assets/images/crossword.png");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif';
+}
+
+#container {
+    width: 960px;
+    margin: auto;
+    background-color: yellow;
+}
