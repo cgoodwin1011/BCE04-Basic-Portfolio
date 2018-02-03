@@ -165,10 +165,10 @@ enter"'?  It's a rhetorichal question */
 }
 
 .aside_text {
+    margin: 0 15px 15px 15px;
     line-height: 1.2em;
     font-size: 0.8em;
     text-align: justify;
-    margin: 0 15px 15px 15px;
 }
 
 .aside_text01 {
@@ -189,7 +189,6 @@ enter"'?  It's a rhetorichal question */
     grid-gap: 25px;
     background-color: #fff;
     text-align: center;
-    overflow: unset;
 }
 
 .portfolio_slides {
@@ -200,10 +199,6 @@ enter"'?  It's a rhetorichal question */
     height: 250px;
     margin-right: 25px; 
     margin-top: 25px;
-    
-}
-
-.portfolio_image {
     
 }
 /* END formatting for MIDDLE section and its contents */
