@@ -19,8 +19,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: Georgia, 'Times New Roman', Times, serif;  
     color: #62a7a4;
-    /* border: 2px blue dotted; */
-    /* background-color: honeydew; */
+}
+
+.cursive{
+    font-family: cursive;
+    font-size: 1.2em;
+}
+
+.right_picture {
+    float:right; 
+    padding:0 0px 10px 10px;   
+}
+
+.fancy_quote {
+    border 2px darkgray double;
 }
 
 /* so this is really better than 'style="text-align: 
@@ -230,21 +242,61 @@ li.active {
     height: 200px;
     /* margin-right: 25px;  */
     /* margin-top: 25px; */
-}    
+}
+
 .portfolio_image {
     max-height: 200px;
     width: 100%;
     overflow: hidden;
 }
+
 .portfolio_title {
     position: relative;
     top: -50%;
     left: 0%;
-    max-width: 100%;
+    /* max-width: 70%;*/
     /* z-index: 99; */
     background-color: #62a7a4;
 }
 
+.form_text {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    color: #62a7a4;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.input_text {
+   background-color: #D7DDDD; 
+   width: 70%;
+   height: 2em;
+   font-size: 1em;
+}
+
+.input_textarea {
+    background-color: #D7DDDD;
+    display: block;
+    width:100%;
+    font-size: 1em;
+}
+
+.input_submit {
+    border: 1px black double;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: #62a7a4;
+    margin-top: 10px;
+    width: 25%;
+}
 /* END formatting for MIDDLE section and its contents */
 
 /* BEGIN formatting for FOOTER section and its contents */

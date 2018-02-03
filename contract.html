@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <title>Goodwin | Portfolio</title>
+    <title>Goodwin | Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="assets/stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
@@ -21,42 +21,26 @@
                 <ul class="page_header_items_top_positioning">
                     <li><a href="index.html">About</li>
                     <li><a href="index.html">Philosophy</li>
-                    <li><a href="portfolio.html"><b>Portfolio</b></a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portfolio.html">Portfolio</b</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <div id="midpage">
             <div id="main">
                 <div class="main_inside">
-                    <h2 class="border_bottom">Portfolio</h2>
+                    <h2 class="border_bottom">Contact</h2>
                     <!-- portfolio use grid -->
-                    <div class="portfolio_slide_frame">
-                        <div class="portfolio_slides">
-                            <img class="portfolio_image" src = "assets\images\placeholders\20170101_015034457_iOS.jpg" width="100%">
-                            <h2 class="h2_name portfolio_title">FroYo</h2>
-                        </div>
-                        <div class="portfolio_slides">
-                            <img class="portfolio_image" src = "assets\images\placeholders\20170217_154850354_iOS.jpg" width="100%"> 
-                            <h2 class="h2_name portfolio_title">Mom&rsquo;s Dog</h2>
-                        </div>
-                        <div class="portfolio_slides">
-                            <img class="portfolio_image" src = "assets\images\placeholders\20170101_032622000_iOS.png" width="100%">
-                            <h2 class="h2_name portfolio_title">Cy Twombly Was Here</h2> 
-                        </div>
-                        <div class="portfolio_slides">
-                            <img class="portfolio_image" src = "assets\images\placeholders\test_fractals.jpg" width="100%">
-                            <h2 class="h2_name portfolio_title">fractal</h2> 
-                        </div>
-                        <div class="portfolio_slides">
-                            <img class="portfolio_image" src = "assets\images\placeholders\20180103_184249301_iOS.jpg" width="100%"> 
-                            <h2 class="h2_name portfolio_title">My Dog</h2>
-                        </div>
-                        <div class="portfolio_slides">
-                            <img class="portfolio_image" src = "assets\images\placeholders\20170101_015034457_iOS.jpg" width="100%"> 
-                            <h2 class="h2_name portfolio_title">testing</h2>
-                        </div>
-                    </div>   
+                    <form id="contact_fom">
+                        <p class="form_text">You can just email me at <a href="mailto:cgoodwin2127@gmail.com">cgoodwin2127@gmail.com</a> or call me at 215-825-4010.<Br>Or if you'd like, you can complete this form</p>
+                        <label>Name:</label> 
+                        <input type="text" id="writer_name" class="input_text" name="web_contact" value="Your Name">
+                        <label>Your e-mail address:</label>
+                        <input type="text" id="writer_email" class="input_text" name="web_contact" value="Your email address goes here">
+                        <label>Your message:</label>
+                        <textarea id="writer_message" name="web_contact" class="input_textarea"  rows="5" cols="60">Type your message here</textarea>
+                        <input type="submit" value="s e n d" class="input_submit">
+                    </form>   
                 </div>
             </div>
             <aside class="sidebar">
