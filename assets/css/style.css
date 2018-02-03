@@ -34,21 +34,35 @@ enter"'?  It's a rhetorichal question */
     margin: auto; 
     max-width: 960px;
     display: block;
-    overflow: auto;
+    /* overflow: auto; */
     /* border: 2px darkgray dotted; */
     /* background-color: chartreuse */
 }
 
 /* BEGIN formatting for header section and its contents */
+/* #page_header_pin_box { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-right: 30%;
+    margin-left: 30%;
+    height: 75px;
+}*/
+
 #page_header {
+    /* set to relative to use absolute positioning in inner elements */
     position: relative;
+    /* margin: auto; */
     display: block; /* assures that header takes an entire line*/
-    overflow: auto; /* resizes block to fit elements */
-    position: relative; /* set to relative so that interior elements can use position: absolute */
+    /* resizes block to fit elements */
+    /* overflow: auto;  */
     border-top: 2px #cccccc solid;
     border-bottom: 2px #cccccc solid;
     background-color: #ffffff;
-    height: 75px; /* if height isn't specified, then the header vanishes. why??? */
+    /* if height isn't specified, then the header vanishes. why??? */
+    height: 75px; 
 }
 
 #name_logo {
@@ -102,6 +116,15 @@ enter"'?  It's a rhetorichal question */
     /* border: 2px lightskyblue solid; */
 }
 
+li.active {
+    font-weight: bold;
+}
+
+#page_top_menu li:hover {
+    background-color: #AAA;
+    color: white;
+}
+
 #page_top_menu li:last-child {
      border-right: none; /* patch to eliminate unneeded line at right end of nav menue */
 }
@@ -118,9 +141,9 @@ enter"'?  It's a rhetorichal question */
     display: block;
     overflow: auto;
     clear: left;
-    height: 1000px;
-    border-bottom: 40px solid #4aaaa5;
-    background-color: blue
+    min-height: 1000px;
+    background-color: blue;
+    margin-bottom: 10%;
 }
 
 #main {
@@ -128,9 +151,11 @@ enter"'?  It's a rhetorichal question */
     float: left;
     background-color: #ffffff;
     margin-top: 5%;
-    /* border: 1px green solid; */
+    margin-bottom: 5%;
+    border: 2px blue solid;
     width: 650px;
     min-height: 300px;
+    border: .5px #62a7a4 solid;
     /* padding: 50px; */
     /* margin-left: 100px; */
     
@@ -149,12 +174,14 @@ enter"'?  It's a rhetorichal question */
 
 .main_inside {
     margin: 0 5% 5% 5%;
+    /* border: 2px red solid; */
 } 
 
 .sidebar {
     position: relative;
     /* display: flex; */
     margin-top: 5%;
+    padding-top: 1em;
     float: right;
     width: 270px;
     height: 100%;
@@ -177,16 +204,16 @@ enter"'?  It's a rhetorichal question */
     line-height: 1.2em;
     font-size: 0.8em;
     font-family: 'Times New Roman', Times, serif;
-    color: red;
+    /* color: red; */
 }
 
 .portfolio_slide_frame {
-    /* position: relative; */
+    position: relative;
     display: grid;
-    width: 650px;
-    grid-template-columns: auto auto;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 25px;
+    grid-gap: 15px;
     background-color: #fff;
     text-align: center;
 }
@@ -194,13 +221,30 @@ enter"'?  It's a rhetorichal question */
 .portfolio_slides {
     /* position: relative;
     float:left; */
-    background-color: khaki;
-    width: 320px;
-    height: 250px;
-    margin-right: 25px; 
-    margin-top: 25px;
-    
+    background-color: #62a7a4;
+    /* overflow: hidden; */
+    /* max-height: 200px; */
+    /* width: 50%; */
+    /* width: 200px;; */
+    /* height: 100%; */
+    height: 200px;
+    /* margin-right: 25px;  */
+    /* margin-top: 25px; */
+}    
+.portfolio_image {
+    max-height: 200px;
+    width: 100%;
+    overflow: hidden;
 }
+.portfolio_title {
+    position: relative;
+    top: -30%;
+    left: 0%;
+    max-width: 100%;
+    /* z-index: 99; */
+    background-color: #62a7a4;
+}
+
 /* END formatting for MIDDLE section and its contents */
 
 /* BEGIN formatting for FOOTER section and its contents */
@@ -215,7 +259,7 @@ enter"'?  It's a rhetorichal question */
     vertical-align: middle;
     color: white;
     background-color: #666666;
-    /* border: 1px violet solid; */
+    border-top: 5px #62a7a4 solid;
 }
 
 /* 
