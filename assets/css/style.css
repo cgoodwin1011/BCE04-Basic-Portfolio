@@ -32,7 +32,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fancy_quote {
-    border 2px darkgray double;
+    border: 2px darkgray double;
+    text-align: center;
+    font-family: cursive;
 }
 
 /* so this is really better than 'style="text-align: 
@@ -279,6 +281,8 @@ label {
    width: 70%;
    height: 2em;
    font-size: 1em;
+   border: 0px;
+   border-radius: .5em;
 }
 
 .input_textarea {
@@ -286,14 +290,17 @@ label {
     display: block;
     width:100%;
     font-size: 1em;
+    border-radius: 0.5em;
+    border: 0px;
 }
 
 .input_submit {
-    border: 1px black double;
+    border: 0px black double;
     color: white;
     font-weight: bold;
     font-size: 1em;
     background-color: #62a7a4;
+    border-radius: .5em;
     margin-top: 10px;
     width: 25%;
 }
